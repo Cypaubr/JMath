@@ -48,4 +48,13 @@ public class TriangleTest {
         assertEquals("Calculated b side should be sqrt(34)",sqrt(34),trianglePoint.getB());
         assertEquals("Calculated c side should be sqrt(50)",sqrt(50),trianglePoint.getC());
     }
+
+    /**
+     * Test for the Triangle perimeter
+     */
+    @Test
+    public void getPerimeterTest(){
+        assertEquals("Should be 6.0 for the simple triangle",6.0,triangle.getPerimeter());
+        assertEquals("Incorrect value for the point triangle",2.0+sqrt(34)+sqrt(50),trianglePoint.getPerimeter());
+    }
 }

@@ -94,6 +94,14 @@ public class Triangle implements PlaceableInSpace{
         return this.C;
     }
 
+    /**
+     * Return the perimeter of the Triangle
+     * @return double
+     */
+    public double getPerimeter(){
+        return a+b+c;
+    }
+
     @Override
     public boolean isPlaceableInSpace() {
         if (A != null && B != null && C != null){
