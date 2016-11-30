@@ -1,5 +1,5 @@
-import com.cypaubr.jmath.analytical.Point;
-import com.cypaubr.jmath.trigonometry.Triangle;
+import com.cypaubr.jmath.geometry.analytical.Point;
+import com.cypaubr.jmath.geometry.trigonometry.Triangle;
 import org.junit.*;
 
 import static java.lang.Math.sqrt;

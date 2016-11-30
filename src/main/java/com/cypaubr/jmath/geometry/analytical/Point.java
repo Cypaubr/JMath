@@ -1,4 +1,7 @@
-package com.cypaubr.jmath.analytical;
+package com.cypaubr.jmath.geometry.analytical;
+
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 
 /**
  * This class defines a Point
@@ -24,6 +27,16 @@ public class Point implements PlaceableInSpace{
 
     public double getY() {
         return y;
+    }
+
+    /**
+     * Calcluates the distance between two Points
+     * @param A Point
+     * @param B Point
+     * @return double
+     */
+    public static double distanceBetween(Point A, Point B){
+        return sqrt(pow(B.getX()-A.getX(),2) + pow(B.getY()-A.getY(),2));
     }
 
     @Override

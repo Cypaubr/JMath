@@ -1,4 +1,4 @@
-import com.cypaubr.jmath.analytical.Point;
+import com.cypaubr.jmath.geometry.analytical.Point;
 import org.junit.*;
 
 import static junit.framework.TestCase.assertEquals;

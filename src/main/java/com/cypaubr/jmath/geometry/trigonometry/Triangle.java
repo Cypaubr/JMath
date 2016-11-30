@@ -1,7 +1,7 @@
-package com.cypaubr.jmath.trigonometry;
+package com.cypaubr.jmath.geometry.trigonometry;
 
-import com.cypaubr.jmath.analytical.PlaceableInSpace;
-import com.cypaubr.jmath.analytical.Point;
+import com.cypaubr.jmath.geometry.analytical.PlaceableInSpace;
+import com.cypaubr.jmath.geometry.analytical.Point;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;

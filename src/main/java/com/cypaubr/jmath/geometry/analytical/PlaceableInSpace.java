@@ -1,4 +1,4 @@
-package com.cypaubr.jmath.analytical;
+package com.cypaubr.jmath.geometry.analytical;
 
 /**
  * This interface makes some objects placeable in space
