@@ -25,6 +25,12 @@ public class Triangle implements PlaceableInSpace{
         this.c = c;
     }
 
+    /**
+     * Triangle constructor from Points
+     * @param A Point
+     * @param B Point
+     * @param C Point
+     */
     public Triangle (Point A, Point B, Point C){
         this.A = A;
         this.B = B;
