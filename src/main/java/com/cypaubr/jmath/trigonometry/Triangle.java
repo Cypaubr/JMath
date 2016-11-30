@@ -6,4 +6,5 @@ package com.cypaubr.jmath.trigonometry;
  * @version 1.0
  */
 public class Triangle {
+    private double a,b,c;
 }
