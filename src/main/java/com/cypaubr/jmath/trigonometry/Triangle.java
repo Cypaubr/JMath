@@ -1,13 +1,17 @@
 package com.cypaubr.jmath.trigonometry;
 
+import com.cypaubr.jmath.analytical.PlaceableInSpace;
+import com.cypaubr.jmath.analytical.Point;
+
 /**
  * This class defines a triangle
  * @author Cyprien A.
  * @version 1.0
  */
-public class Triangle {
+public class Triangle implements PlaceableInSpace{
 
     private double a,b,c;
+    private Point A,B,C;
 
     /**
      * Triangle constructor
@@ -19,6 +23,12 @@ public class Triangle {
         this.a = a;
         this.b = b;
         this.c = c;
+    }
+
+    public Triangle (Point A, Point B, Point C){
+        this.A = A;
+        this.B = B;
+        this.C = C;
     }
 
     /**
@@ -43,5 +53,38 @@ public class Triangle {
      */
     public double getC(){
         return this.c;
+    }
+
+    /**
+     * Return the Point A of the Triangle
+     * @return Point
+     */
+    public Point getPointA(){
+        return this.A;
+    }
+
+    /**
+     * Return the Point B of the Triangle
+     * @return Point
+     */
+    public Point getPointB(){
+        return this.B;
+    }
+
+    /**
+     * Return the Point C of the Triangle
+     * @return Point
+     */
+    public Point getPointC(){
+        return this.C;
+    }
+
+    @Override
+    public boolean isPlaceableInSpace() {
+        if (A != null && B != null && C != null){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
