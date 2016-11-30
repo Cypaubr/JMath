@@ -2,6 +2,7 @@ import com.cypaubr.jmath.analytical.Point;
 import com.cypaubr.jmath.trigonometry.Triangle;
 import org.junit.*;
 
+import static java.lang.Math.sqrt;
 import static junit.framework.TestCase.assertEquals;
 
 /**
@@ -38,8 +39,13 @@ public class TriangleTest {
      */
     @Test
     public void instanciationPointTest(){
+        //testing points
         assertEquals("getPointA() should return Point(0.0,0.0)", A, trianglePoint.getPointA());
         assertEquals("getPointB() should return Point(2.0,0.0)", B, trianglePoint.getPointB());
         assertEquals("getPointC() should return Point(5.0,5.0)", C , trianglePoint.getPointC());
+        //testing generated length
+        assertEquals("Calculated a side should be 2.0",2.0,trianglePoint.getA());
+        assertEquals("Calculated b side should be sqrt(34)",sqrt(34),trianglePoint.getB());
+        assertEquals("Calculated c side should be sqrt(50)",sqrt(50),trianglePoint.getC());
     }
 }

@@ -3,6 +3,9 @@ package com.cypaubr.jmath.trigonometry;
 import com.cypaubr.jmath.analytical.PlaceableInSpace;
 import com.cypaubr.jmath.analytical.Point;
 
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
+
 /**
  * This class defines a triangle
  * @author Cyprien A.
@@ -35,6 +38,12 @@ public class Triangle implements PlaceableInSpace{
         this.A = A;
         this.B = B;
         this.C = C;
+        //calculate the a side length
+        a = sqrt(pow((B.getX()-A.getX()),2) + pow((B.getY()+A.getY()),2));
+        //calculate the b side length
+        b = sqrt(pow((C.getX()-B.getX()),2) + pow((C.getY()+B.getY()),2));
+        //calculate the c side
+        c = sqrt(pow((A.getX()-C.getX()),2) + pow((A.getY()+C.getY()),2));
     }
 
     /**
