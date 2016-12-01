@@ -21,10 +21,18 @@ public class Point implements PlaceableInSpace{
         this.y = y;
     }
 
+    /**
+     * Return the abscissa of the Point
+     * @return double
+     */
     public double getX() {
         return x;
     }
 
+    /**
+     * Return the ordinates of the Point
+     * @return double
+     */
     public double getY() {
         return y;
     }
