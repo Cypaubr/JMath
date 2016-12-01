@@ -37,17 +37,32 @@ JMath provide a bunch of mathematics oriented functionnalities (e.g. function de
 <h2>
 <a id="installing" class="anchor" href="#installing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing</h2>
 
-<p>For the moment, the only way to use JMath is to clone and build it by yourself, the time I set up a JAR library and a Maven repository.</p>
+<p>For the moment, the only way to install JMath is to build your own JAR library from the master branch (see the Wiki for the 'how to'). Don't worry, I will set up a Bintray repository for the first version and each version will be available in the 'Release' section of GitHub as JAR.</p>
 
-<h3>
-<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h3>
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
 
-<p>Everyone can contribute to JMath by adding features, correcting bug; the only rules are:</p>
+<p>Here is a simple utilisation of JMath:  </p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-c">//creating 3 points</span>
+<span class="pl-smi">Point</span> <span class="pl-smi">A</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Point</span>(<span class="pl-c1">2</span>,<span class="pl-c1">4</span>);  
+<span class="pl-smi">Point</span> <span class="pl-smi">B</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Point</span>(<span class="pl-c1">0</span>,<span class="pl-c1">0</span>);  
+<span class="pl-smi">Point</span> <span class="pl-smi">C</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Point</span>(<span class="pl-c1">7.5</span>,<span class="pl-c1">9</span>);  
+
+<span class="pl-smi">Triangle</span> t <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Triangle</span>(<span class="pl-smi">A</span>,<span class="pl-smi">B</span>,<span class="pl-smi">C</span>); <span class="pl-c">//creating a triangle from the 3 points</span>
+
+<span class="pl-smi">System</span><span class="pl-k">.</span>out<span class="pl-k">.</span>println(<span class="pl-s"><span class="pl-pds">"</span>Permimeter of the triangle is:<span class="pl-pds">"</span></span> <span class="pl-k">+</span> t<span class="pl-k">.</span>getPerimeter()); <span class="pl-c">//side length are auto-calculated with perimeter</span></pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Everyone can contribute to Jmath by adding features, correcting bugs and improve tests. The only rules are:</p>
 
 <ul>
-<li>You must push you modifications on a separated Git Branch</li>
-<li>You must write JUnit tests for all your classes/features</li>
-<li><strong>Your tests all must pass before pushing onto your branch</strong></li>
+<li>You must push your modifications on a separated Git branch</li>
+<li>You must write unit tests (with JUnit) and these tests must me compliant with the other tests (take a look to the tests on the master branch to get an idea) and with the Gradle Build Tool.</li>
+<li>
+<strong>Your tests musl all pass before you push onto your branch</strong>, else it will not be merged into the master branch and your modifications will be ignored... forever...</li>
 </ul>
 
 <h3>
