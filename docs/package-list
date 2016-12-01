@@ -1,4 +1,6 @@
 
-com.cypaubr.jmath.analytical
+com.cypaubr.jmath
+com.cypaubr.jmath.geometry
+com.cypaubr.jmath.geometry.analytical
+com.cypaubr.jmath.geometry.trigonometry
 com.cypaubr.jmath.matrix
-com.cypaubr.jmath.trigonometry
