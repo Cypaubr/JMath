@@ -6,6 +6,7 @@ import static java.lang.Math.sqrt;
 public class Vector {
 
     private double norm,x,y;
+    private Point A,B;
 
     /**
      * Creates a Vector from its norm
@@ -23,6 +24,19 @@ public class Vector {
     public Vector(double x, double y){
         this.x = x;
         this.y = y;
+        this.norm = sqrt(pow(x,2) + pow(y,2));
+    }
+
+    /**
+     * Creates a Vector from 2 Points
+     * @param A Point
+     * @param B Point
+     */
+    public Vector(Point A, Point B){
+        this.A = A;
+        this.B = B;
+        this.x = B.getX() - A.getX();
+        this.y = B.getY() - A .getY();
         this.norm = sqrt(pow(x,2) + pow(y,2));
     }
 
