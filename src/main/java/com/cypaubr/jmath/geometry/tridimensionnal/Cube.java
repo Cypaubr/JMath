@@ -1,7 +1,6 @@
 package com.cypaubr.jmath.geometry.tridimensionnal;
 
 import com.cypaubr.jmath.geometry.Square;
-import com.sun.istack.internal.NotNull;
 
 import java.util.Map;
 
@@ -29,7 +28,7 @@ public class Cube {
      * Constructs a cube from on of its faces
      * @param square Cube
      */
-    public Cube(@NotNull Square square)
+    public Cube(Square square)
     {
         this.edge = square.getSide();
         this.volume = Math.pow(this.edge,3);
