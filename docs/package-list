@@ -1,5 +1,6 @@
 
 com.cypaubr.jmath
+com.cypaubr.jmath.analysis
 com.cypaubr.jmath.geometry
 com.cypaubr.jmath.geometry.analytical
 com.cypaubr.jmath.geometry.tridimensionnal
