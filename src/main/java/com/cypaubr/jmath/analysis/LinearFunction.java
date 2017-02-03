@@ -5,7 +5,7 @@ package com.cypaubr.jmath.analysis;
  * @author Cyprien A.
  * @version 1.0
  */
-public class LinearFunction {
+public class LinearFunction extends Function{
 
     private double a,b;
 
